@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rancher-autocrypt:
+    image: keetraxx/rancher-autocrypt:latest
+    stdin_open: true
+    volumes:
+      - /home/rancher-autocrypt:/rancher-autocrypt
+    tty: true
+    labels:
+      io.rancher.container.agent.role: environment
+      io.rancher.container.create_agent: 'true'
+      io.rancher.container.pull_image: always
+    environment: 
+      - LETSENCRYPT_DIRECTORY_URL=${LETSENCRYPT_DIRECTORY_URL}
+      - LETSENCRYPT_CONTACT_EMAIL=${LETSENCRYPT_CONTACT_EMAIL}

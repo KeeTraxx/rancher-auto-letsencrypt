@@ -1,0 +1,22 @@
+version: '2'
+catalog:
+  name: Rancher Autocrypt
+  version: 1.1.0
+  description: Automatically create and manage certificates in Rancher using Let's Encrypt webroot verification.
+  minimum_rancher_version: v1.5.0
+  questions:
+    - variable: LETSENCRYPT_DIRECTORY_URL
+      label: ACME directory
+      description: | Which ACME directory to use (default is Let's Encrypt). Use letsencrypt/boulder for testing.
+      default: https://acme-v01.api.letsencrypt.org/directory
+      required: true
+      type: string
+    - variable: LETSENCRYPT_CONTACT_EMAIL
+      label: Contact email
+      description: | Contact email to use for ACME accounts.
+      required: true
+      type: string
+services:
+  rancher-autocrypt:
+    scale: 1
+    start_on_create: true

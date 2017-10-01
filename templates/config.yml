@@ -1,0 +1,8 @@
+name: Rancher Automatic Letsencrypt Service
+description: |
+  Automatically create and manage certificates in Rancher using Let's Encrypt webroot verification.
+version: 1.1.0
+category: Certificates
+maintainer: Khôi Tran <kt@compile.ch>
+license: MIT
+projectURL: https://github.com/KeeTraxx/rancher-autocrypt
