@@ -7,13 +7,15 @@ catalog:
   questions:
     - variable: LETSENCRYPT_DIRECTORY_URL
       label: ACME directory
-      description: | Which ACME directory to use (default is Let's Encrypt). Use letsencrypt/boulder for testing.
+      description: |
+        Which ACME directory to use (default is Let's Encrypt). Use letsencrypt/boulder for testing.
       default: https://acme-v01.api.letsencrypt.org/directory
       required: true
       type: string
     - variable: LETSENCRYPT_CONTACT_EMAIL
       label: Contact email
-      description: | Contact email to use for ACME accounts.
+      description: | 
+        Contact email to use for ACME accounts.
       required: true
       type: string
 services:

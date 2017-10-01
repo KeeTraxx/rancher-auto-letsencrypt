@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   rancher-autocrypt:
     image: keetraxx/rancher-autocrypt:latest
