@@ -1,4 +1,4 @@
-name: Rancher Automatic Letsencrypt Service
+name: Rancher Autocrypt
 description: |
   Automatically create and manage certificates in Rancher using Let's Encrypt webroot verification.
 version: 1.1.0
