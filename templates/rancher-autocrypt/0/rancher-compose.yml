@@ -3,7 +3,7 @@ catalog:
   name: Rancher Autocrypt
   version: 1.1.0
   description: Automatically create and manage certificates in Rancher using Let's Encrypt webroot verification.
-  minimum_rancher_version: v1.5.0
+  minimum_rancher_version: v1.6.6
   questions:
     - variable: LETSENCRYPT_DIRECTORY_URL
       label: ACME directory
